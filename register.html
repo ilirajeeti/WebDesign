@@ -14,17 +14,18 @@
       <div class="button-box">
         <a href="resetpassword.html"><button type="button" class="submit-btn">Reset</button></a>
       </div>
-      <form id="login" class="input-group" action="index.html">
-        <input type="text" class="input-field" placeholder="FirstName" required>
-        <input type="text" class="input-field" placeholder="LastName" required>
-        <input type="text" class="input-field" placeholder="PhoneNumber" required>
-        <input type="text" class="input-field" placeholder="Email"required>
-        <input type="password" class="input-field" placeholder="Enter Password" required>
-        <input type="password" class="input-field" placeholder="Confirm Password" required>
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="FirstName" id="fname">
+        <input type="text" class="input-field" placeholder="LastName" id="lname">
+        <input type="text" class="input-field" placeholder="PhoneNumber" id="phone">
+        <input type="text" class="input-field" placeholder="Email" id="email">
+        <input type="password" class="input-field" placeholder="Enter Password" id="pass">
+        <input type="password" class="input-field" placeholder="Confirm Password"id="cpass" >
         <input type="checkbox" class="check-box"><span>Remember Passsword</span>
-        <button type="submit" class="submit-btn">SignUp</button>
+        <button type="submit" class="submit-btn" onclick="return logSubmit()">SignUp</button>
       </form> 
     </div>
   </div>
-
+  <script src="register.js"></script>
+</body>
 </html>
